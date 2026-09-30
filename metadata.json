@@ -1,0 +1,6 @@
+{
+  "name": "SUSTAINA - Sustainable Campus & Facility Intelligence",
+  "description": "CampusIQ: AI-Powered Sustainable Campus Intelligence by ECONEX. Smart decisions for a greener, cleaner and more efficient campus.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

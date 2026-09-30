@@ -1,0 +1,40 @@
+import { EnergyData } from '../types';
+
+export const initialEnergyData: EnergyData = {
+  totalUsage: 12450,
+  changePercent: -8.4,
+  estimatedCost: 124500,
+  solarGeneration: 3240,
+  renewablePercentage: 26,
+  co2Emissions: 5.2,
+  hourlyData: [
+    { time: '00:00', usage: 220, solar: 0, grid: 220, baseline: 250 },
+    { time: '02:00', usage: 190, solar: 0, grid: 190, baseline: 240 },
+    { time: '04:00', usage: 185, solar: 0, grid: 185, baseline: 230 },
+    { time: '06:00', usage: 310, solar: 40, grid: 270, baseline: 340 },
+    { time: '08:00', usage: 780, solar: 240, grid: 540, baseline: 820 },
+    { time: '10:00', usage: 1140, solar: 480, grid: 660, baseline: 1180 },
+    { time: '12:00', usage: 1420, solar: 650, grid: 770, baseline: 1460 },
+    { time: '14:00', usage: 1380, solar: 610, grid: 770, baseline: 1320 },
+    { time: '16:00', usage: 1210, solar: 390, grid: 820, baseline: 1150 },
+    { time: '18:00', usage: 890, solar: 90, grid: 800, baseline: 940 },
+    { time: '20:00', usage: 640, solar: 0, grid: 640, baseline: 700 },
+    { time: '22:00', usage: 380, solar: 0, grid: 380, baseline: 420 },
+  ],
+  buildingData: [
+    { building: 'Engineering', usage: 3850, cost: 38500, solarContribution: 18, efficiencyScore: 68, peakUsageHour: '14:30' },
+    { building: 'Science Block', usage: 2650, cost: 26500, solarContribution: 28, efficiencyScore: 82, peakUsageHour: '11:30' },
+    { building: 'Laboratory', usage: 2210, cost: 22100, solarContribution: 22, efficiencyScore: 74, peakUsageHour: '13:00' },
+    { building: 'Hostel', usage: 1580, cost: 15800, solarContribution: 28, efficiencyScore: 81, peakUsageHour: '20:45' },
+    { building: 'Cafeteria', usage: 1420, cost: 14200, solarContribution: 20, efficiencyScore: 79, peakUsageHour: '12:45' },
+    { building: 'Library', usage: 1120, cost: 11200, solarContribution: 44, efficiencyScore: 92, peakUsageHour: '15:00' },
+    { building: 'Auditorium', usage: 920, cost: 9200, solarContribution: 15, efficiencyScore: 88, peakUsageHour: '16:30' },
+    { building: 'Administration', usage: 750, cost: 7500, solarContribution: 20, efficiencyScore: 86, peakUsageHour: '10:30' },
+  ],
+  sources: [
+    { name: 'Rooftop Solar Array A & B', percentage: 26, kwh: 3240, color: '#166534' },
+    { name: 'State Power Grid', percentage: 64, kwh: 7968, color: '#0284C7' },
+    { name: 'Campus Diesel Genset (Backup)', percentage: 4, kwh: 498, color: '#F59E0B' },
+    { name: 'Micro-Hydro Turbine (Canal)', percentage: 6, kwh: 744, color: '#15803D' },
+  ],
+};
